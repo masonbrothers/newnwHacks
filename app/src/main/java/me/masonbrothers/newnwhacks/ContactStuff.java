@@ -40,4 +40,16 @@ public class ContactStuff extends AppCompatActivity {
         }
 
     }
+
+    public String[] dennisContacts()
+    {
+        Set<String> keys = contactsPlease().keySet();
+        String[] dennis = new String[keys.size()];
+        int i = 0;
+        for(String keyName : keys){
+            dennis[i] = keyName;
+            i++;
+        }
+        return dennis;
+    }
 }
